@@ -513,7 +513,16 @@ img {
   }
 
   .about .container {
-    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .about .container img{
+    display: none;
+  }
+
+  .about .timing h3 {
+    font-size: 12px;
   }
 
   .about .experience {
@@ -543,9 +552,26 @@ img {
   }
 
   .gallery .gallery-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: auto;
+    margin: auto;
+    padding: 0;
+  }
+  
+  .gallery .gallery-wrapper div {
+    border: 5px solid var(--color-primary);
+    width: auto;
+    
+  }
+
+  .gallery .gallery-wrapper div img {
+    width: auto ;
+}
+
+  .home .banner{
+    margin-top: -255px;
+    padding: 7px;
   }
 
   .gallery .gallery-wrapper div {
@@ -557,6 +583,7 @@ img {
     flex-direction: column;
     align-items: center;
   }
+
 
   .location .head .info {
     margin-bottom: 20px;
@@ -586,5 +613,10 @@ img {
 
   .gallery h2 {
     font-size: 30px;
+  }
+
+  .home .banner{
+    margin-top: -75px;
+    padding: 7px;
   }
 }
